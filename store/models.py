@@ -65,12 +65,6 @@ class Customer(models.Model):
     membership_status = models.CharField(max_length=1, choices=MEMBERSHIP_CHOICES,
                                          default=membership_bronze)
 
-    class Meta:
-        db_table = 'store_customer'
-        indexes = [
-            models.Index(fields=['last_name', 'first_name'])
-        ]
-
 
 class Order(models.Model):
     placed_at = models.DateTimeField(auto_now_add=True)
