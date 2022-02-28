@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 contenttype = "*"
+mysqlclient = "*"
 
 [dev-packages]
 autopep8 = "*"
